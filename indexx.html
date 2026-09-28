@@ -1,0 +1,227 @@
+Portfólio HTML semântico
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio - Elisa Ferrari Navarro</title>
+
+    <style>
+        body {
+            background-color: rgb(201, 242, 233);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>
+            Elisa Ferrari Navarro -
+            <span>Estudante em Técnico em Desenvolvimento de Sistemas</span>
+        </h1>
+
+        <!-- Navegação principal -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+
+            <figure>
+                <img 
+                    src="assets/Design sem nome.png"
+                    alt="Foto de Elisa Ferrari Navarro"
+                    width="150"
+                    height="150"
+                >
+            </figure>
+
+            <p>
+                Sou estudante de
+                <strong>Desenvolvimento de Sistemas no SENAI-SP</strong>.
+            </p>
+
+            <p>
+                Possuo conhecimento em HTML e CSS e estou aprendendo
+                <em>JavaScript</em>.
+            </p>
+
+            <h3>Minhas Habilidades</h3>
+
+            <ul>
+                <li>HTML5 Semântico</li>
+                <li>CSS3 e Responsividade</li>
+                <li>Formulários e Validação</li>
+                <li>Estruturação de dados</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+
+            <table border="1">
+                <caption>
+                    Projetos desenvolvidos durante meus estudos
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Projeto</th>
+                        <th scope="col">Tecnologias</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            Página com descrição simples de um filme
+                        </td>
+                        <td>HTML</td>
+                        <td>Completo</td>
+                        <td>
+                            <a
+                                href="https://github.com/ElisaFerrariNavarro/projeto-filme"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver projeto
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Página HTML promovendo uma empresa de jogos
+                            e consoles retrô
+                        </td>
+                        <td>HTML</td>
+                        <td>Completo</td>
+                        <td>
+                            <a
+                                href="https://github.com/ElisaFerrariNavarro/Game-Zone-Retro"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver projeto
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Projeto inicial de ambientação no GitHub
+                        </td>
+                        <td>JavaScript</td>
+                        <td>Completo</td>
+                        <td>
+                            <a
+                                href="https://github.com/ElisaFerrariNavarro/projeto-estacionamentov"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ver projeto
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+
+            <form action="processar.php" method="post">
+                <fieldset>
+                    <legend>Dados do contato</legend>
+
+                    <p>
+                        <label for="nome">Nome completo:</label><br>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="assunto">Assunto:</label><br>
+
+                        <select id="assunto" name="assunto" required>
+                            <option value="">
+                                Selecione uma opção
+                            </option>
+
+                            <option value="trabalho">
+                                Oportunidades de trabalho
+                            </option>
+
+                            <option value="projeto">
+                                Proposta de projeto
+                            </option>
+
+                            <option value="geral">
+                                Contato geral
+                            </option>
+                        </select>
+                    </p>
+
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            &copy; 2026 Elisa Ferrari Navarro. Desenvolvido durante o curso.
+        </p>
+
+        <address>
+            <a href="mailto:seuemail@exemplo.com">
+                E-mail
+            </a>
+            |
+            <a href="tel:+5511992257318">
+                (11) 99225-7318
+            </a>
+        </address>
+    </footer>
+
+</body>
+
+</html>
