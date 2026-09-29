@@ -40,18 +40,10 @@ Os projetos são apresentados em uma tabela contendo quatro colunas:
 
 | Projeto | Tecnologias | Status | Link |
 |---|---|---|---|
-| Projeto 1 | HTML, CSS | Concluído | Acessar |
-| Projeto 2 | JavaScript | Em andamento | Acessar |
-| Projeto 3 | HTML, CSS, JS | Concluído | Acessar |
+| Projeto 1 | Linguagem x | ex: Concluído | Acessar |
+| Projeto 2 | Linguagem y | ex: Em andamento | Acessar |
+| Projeto 3 | Linguagem Z | ex: Concluído | Acessar |
 
-A tabela utiliza corretamente as tags:
-
-- `<table>`
-- `<thead>`
-- `<tbody>`
-- `<tr>`
-- `<th>`
-- `<td>`
 
 ### 📩 Entre em Contato
 
